@@ -1,0 +1,82 @@
+Questão 1
+arquivo = open("teste.txt", "r")
+print(arquivo)
+print(arquivo.read()) 
+
+Questão 2
+
+f = open('teste.txt','w')
+f.write('texto 1')
+f.close()
+
+f = open('teste.txt', 'r')
+print(f.read())
+f.close
+
+
+Questão 3
+with open('teste.txt', 'w') as f :
+    f.write('04.04.25  5,80\n')
+    f.write('03.04.25  5,85')
+
+with open('teste.txt', 'r') as f :     
+    print(f.read())
+
+
+with open('teste.txt', 'a') as f:
+    f.write('\n02.04.25  5,70')
+
+with open('teste.txt', 'a') as f:
+    f.write('\n01.04.25  5,60')
+
+
+Questão 4
+
+f = open('teste.txt','r')
+print(f.readline())
+print(f.readline())
+print(f.readline())
+print(f.readline())
+f.close()
+
+Questão 5
+
+f = open('teste.txt','r')
+print(f.readlines())
+f.close()
+
+Questão 6
+
+f = open('teste.txt','r')
+for linha in f:
+    print(linha)
+f.close()    
+
+Questão 7
+
+f = open('teste.txt','r')
+for linha in f:
+    print(linha.split())
+f.close()    
+Questão 8
+f = open('teste.txt','w+')
+
+texto = ["palavra 1","palavra 2","palavra 3"]
+for linha in texto:
+    f.write(linha)
+    f.write("\n")
+f.close()
+
+Questão 9
+
+f = open('teste.txt','r')
+for linha in f:
+    print(linha)
+f.close() 
+
+Questão 10
+
+f = open('vendas.txt','r', encoding="utf-8")
+
+print(f.read())
+f.close()
